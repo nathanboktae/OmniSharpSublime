@@ -34,5 +34,18 @@
     , {
         "command": "omni_sharp_add_reference",
         "caption": "OmniSharpSublime: Add Reference"
+    },
+    {
+        "command": "omni_sharp_fix_code_issue",
+        "caption": "OmniSharpSublime: Fix Code Issue"
+    },
+    ,
+    {
+        "command": "omni_sharp_fix_usings",
+        "caption": "OmniSharpSublime: Fix Usings"
+    },
+    {
+        "command": "omni_sharp_code_actions",
+        "caption": "OmniSharpSublime: Code Actions"
     }
 ]

@@ -1,7 +1,7 @@
 # OmniSharpSublime for ST3
  OmnisharpSublime is a plugin for ST3 to provide C# development environment. It communicate with OmniSharpServer by nosami for IDE functions.
 
- It works on Mac OSX and Linux.
+ It works on Mac OSX, Linux & Windows.
 
 # Features
  1. Auto OmniSharpServer running
@@ -14,6 +14,10 @@
  8. Displays possible override methods
  9. Find Usages
  10. Format Document
+ 11. Displays code issues such as `assigment is redundant`
+ 12. Fix code issues - put cursor on highlighted issue and select `Fix Code Issue`
+ 13. Remove Unused, Add Missing and Sort `Using` Statements
+ 14. Code Actions eg. `Convert LINQ query to Fluent Syntax`
 
 # Requirements
  * Mono Development Kit(for [OmniSharpServer](https://github.com/nosami/OmniSharpServer))
@@ -67,9 +71,12 @@ To run server automatically, you have to specify a solution file in a sublime-pr
 
 
 ## C# language-specific settings
-
- This will launch completion on . and < symbols
- Edit C#-sublime-settings
+ Create C# settings file as shown in this picture
+ 
+ ![Imgur](http://i.imgur.com/KjcPSFq.png)
+ 
+ 
+ Paste the below in. This will launch intellisense on . and < symbols
  ```
  {
     "auto_complete": true,
@@ -103,6 +110,5 @@ This is to do with the settings for `OmniSharpServer`.  Simply go to the OmniSha
 # Sometime
 * Show Documentations
 * Find type / symbols
-* code action
 * type lookup
 * advanced syntax highlight
